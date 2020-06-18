@@ -12,6 +12,14 @@ Vue.use(VueRouter)
     component: Home
   },
   {
+    path: '/item',
+    component: ()=> import('../page/item')
+  },
+  {
+    path: '/score',
+    component: ()=> import('../page/score')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting

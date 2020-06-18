@@ -26,8 +26,8 @@ Vue.use(utils);
 
 Vue.prototype.$dialog=Dialog
 Vue.prototype.$loading=Loading
-Vue.prototype.toast=toast
-Vue.prototype.http = { get, post }
+Vue.prototype.$toast=toast
+Vue.prototype.$http = { get, post }
 
 //注入全局过滤器
 Object.keys(filters).forEach(item => {

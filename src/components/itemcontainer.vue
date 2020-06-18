@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       itemId: null, //题目ID
-      chooseNum: null, //选中答案索引
+      choosedNum: null, //选中答案索引
       chooseId: null //选中答案id
     };
   },
@@ -50,7 +50,7 @@ export default {
     //点击下一题
     nextItem() {
       if (this.choosedNum !== null) {
-        this.chooseNum = null;
+        this.choosedNum = null;
         //保存答案，题目索引加一，调到下一题
         this.addNum(this.chooseId);
       } else {
@@ -71,7 +71,7 @@ export default {
     },
     //选中的答案信息
     choosed(type, id) {
-      this.chooseNum = type;
+      this.choosedNum = type;
       this.chooseId = id;
     },
     //到达最后一题，交卷，清空定时器，跳转分数页面
@@ -89,7 +89,7 @@ export default {
     //初始化信息
     if (this.fatherComponent == "home") {
       this.initializeData();
-      document.body.style.backgroundImage = "url(./img/1-1.jpg)";
+      //document.body.style.backgroundImage = "url(./img/1-1.jpg)";
     }
   }
 };

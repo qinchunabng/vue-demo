@@ -6,6 +6,7 @@
                 <img src="../../../assets/images/fail.png" alt="" width="36" v-if="type=='fail'"/>
                 <img src="../../../assets/images/warning.png" alt="" width="36" v-if="type=='warning'"/>
                 <img src="../../../assets/images/loading.png" alt="" width="36" v-if="type=='loading'" class="loading"/>
+                <span>{{msg}}</span>
             </div>
         </transition>
     </div>
@@ -35,9 +36,9 @@ export default {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0,0,0,0.8);
-    padding: 11px 13px;
-    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.50rem 0.25rem;
+    border-radius: 0.1rem;
     text-align: center;
     font-size: 16px;
     word-break: keep-all;
